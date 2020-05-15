@@ -7,21 +7,37 @@
 </head>
   <body>
 
-    <header>      
-      <nav>
+    <header>   
+      <div class="header__logo">
         <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
-        <input type="search" placeholder="Поиск по сайту">
-        <a href="blank.html">Войти</a>
-        <a href="blank.html">Сравнить</a>
-        <a href="blank.html">Корзина</a>        
-        <a href="catalog.html">каталог товаров</a>        
-        <button type="button">+</button>        
-        <ul>          
-          <li><a href="blank.html">доставка</a></li>
-          <li><a href="blank.html">гарантия</a></li>
-          <li><a href="blank.html">контакты</a></li>
-        </ul>
-      </nav>
+      </div> <!-- header__logo  -->
+      <div class="header__top">
+        <div class="header__search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+        </div>
+        <div class="header__menu">
+          <a href="blank.html">Войти</a>
+          <a href="blank.html">Сравнить</a>
+          <a href="blank.html">Корзина</a>        
+        </div>
+      </div> <!-- header__top -->
+      <div class="header__bottom">
+        <nav> 
+          <div class="header__submenu">
+            <a href="catalog.html">каталог товаров</a>
+          </div>
+          <div class="header__submenu_hover">
+            <!-- тут будет выпадающее меню -->
+          </div>
+          <div class="header__navigation">
+            <ul>          
+              <li><a href="blank.html">доставка</a></li>
+              <li><a href="blank.html">гарантия</a></li>
+              <li><a href="blank.html">контакты</a></li>
+            </ul>
+          </div>          
+        </nav>
+      </div> <!-- header__bottom -->      
     </header>
 
     <main>
@@ -31,57 +47,62 @@
       <!-- тут будут сервисы -->
       <!-- тут будут логотипы -->
 
-      <section class="info">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
-          который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки<br> 
-          России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li><a href="blank.html">Деловые линии</a></li>
-          <li><a href="blank.html">Автотрейдинг</a></li>
-          <li><a href="blank.html">ЖелДорЭкспедиция</a></li>
-        </ul>
-        <a href="blank.html">подробнее о нас</a>
-      </section>
+      <div class="info__wrapper">
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
-          проверить работоспособность покупки. Всякое бывает.</p>
-        <!-- тут будет карта -->
-        <a href="blank.html">напишите нам</a>
-      </section>
+        <section class="info">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="blank.html">подробнее о нас</a>
+        </section>
+  
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <!-- тут будет карта -->
+          <a href="blank.html">напишите нам</a>
+        </section>
+
+      </div> <!-- info__wrapper   -->
     </main>
 
     <footer>
-      <section>
-        <h2>Как нас найти</h2>
-        <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </section>
+      <div class="footer__inner">
 
-      <section>        
-          <a href="blank.html">Доставка</a>
-          <a href="blank.html">Гарантия</a>
-          <a href="blank.html">Контакты</a>
-          <h2>Давайте дружить</h2>
-        <ul>
-          <li><a href="blank.html">Фейсбук</a></li>
-          <li><a href="blank.html">Инстаграм</a></li>
-          <li><a href="blank.html">Твиттер</a></li>
-        </ul>
-      </section>
-          
-      <section>        
-        <a href="blank.html">Войти</a>
-          <a href="blank.html">Сравнить</a>
-          <a href="blank.html">Корзина</a>
-          <h2>Как с нами связаться</h2>
-          <p>Тел.: +7 (495) 495-95-95</p>
-          <h3>Разработчик</h3>
-          <a href="blank.html"><img src="img/logo-2.png" alt="Логотип HTML-academy"></a>
-      </section>
+        <section class="footer__left">
+          <h2>Как нас найти</h2>
+          <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+          <p>г. Москва, ул. Строителей, 15</p>
+        </section> <!-- footer__left -->
+  
+        <section class="footer__between">        
+            <a href="blank.html">Доставка</a>
+            <a href="blank.html">Гарантия</a>
+            <a href="blank.html">Контакты</a>
+            <h2>Давайте дружить</h2>
+          <ul>
+            <li><a href="blank.html">Фейсбук</a></li>
+            <li><a href="blank.html">Инстаграм</a></li>
+            <li><a href="blank.html">Твиттер</a></li>
+          </ul>
+        </section> <!-- footer__between   -->
+  
+        <section class="footer-right">        
+            <a href="blank.html">Войти</a>
+            <a href="blank.html">Сравнить</a>
+            <a href="blank.html">Корзина</a>
+            <h2>Как с нами связаться</h2>
+            <p>Тел.: +7 (495) 495-95-95</p>
+            <h3>Разработчик</h3>
+            <a href="blank.html"><img src="img/logo-2.png" alt="Логотип HTML-academy"></a>
+        </section> <!-- footer-right -->
+
+      </div> <!-- footer__inner -->      
     </footer>
 
   </body>
