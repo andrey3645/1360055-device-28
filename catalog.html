@@ -50,44 +50,49 @@
       <li>Моноподы для селфи</li>
     </ul>
 
-    <aside>
-      <div class="aside__filter">
-        <h2>Фильтр: </h2>
-        <!-- тут будет что-то, что верстать пока не нужно -->
-      </div>
-      <div class="aside__range">
-        <h3>Стоимость</h3>
-        <!-- тут будет ползунок -->
+    <aside class="filter">
+      <h2>Фильтр: </h2>
+      <h3>Стоимость</h3>
+      <div class="filter__range">
+        <input type="range" min="0" max="5000" value="350">
+        <div class="filter__range-diapazon">
+          <div class="filter__range-min">
+            <p>от 0</p>
+          </div>
+          <div class="filter__range-max">
+            <p>до 5000</p>
+          </div>
+        </div>
       </div>
 
-      <form action="https://echo.htmlacademy.ru/" method="POST">
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="POST">
         <h3>Цвет</h3>
-        <div class="form__item">
+        <div class="filter-form__item">
           <input type="checkbox" name="color" id="color-black" checked>
           <label for="color-black">Чёрный</label>
         </div>
-        <div class="form__item">
+        <div class="filter-form__item">
           <input type="checkbox" name="color" id="color-white">
           <label for="color-white">Белый</label>
         </div>
-        <div class="form__item">
+        <div class="filter-form__item">
           <input type="checkbox" name="color" id="color-blue" checked>
           <label for="color-blue">Синий</label>
         </div>
-        <div class="form__item">
+        <div class="filter-form__item">
           <input type="checkbox" name="color" id="color-red" checked>
           <label for="color-red">Красный</label>
         </div>
-        <div class="form__item">
+        <div class="filter-form__item">
           <input type="checkbox" name="color" id="color-pink">
           <label for="color-pink">Розовый</label>
         </div>
         <h3>Bluetooth</h3>
-        <div class="form__item radio">
+        <div class="filter-form__item radio">
           <input type="radio" name="Bluetooth" id="radio-yes" value="1" checked>
           <label for="radio-yes">Есть</label>
         </div>
-        <div class="form__item radio">
+        <div class="filter-form__item radio">
           <input type="radio" name="Bluetooth" id="radio-no" value="0">
           <label for="radio-no">Нет</label>
         </div>
@@ -99,13 +104,28 @@
     <section class="catalog">
       <div class="catalog__sort">
         <h2>Сортировка</h2>
-        <button type="button">По цене</button>
-        <button type="button">По типу</button> <!-- этот блок сказали пока что не верстать -->
-        <button type="button">По популярности</button>
+        <ul class="catalog__sort-list">
+          <li class="catalog__sort-item">
+            <button type="button">По цене</button>
+          </li>
+          <li class="catalog__sort-item">
+            <button type="button">По типу</button>
+          </li>
+          <li class="catalog__sort-item">
+            <button type="button">По популярности</button>
+          </li>
+        </ul>
+        <div class="catalog__sort-arrows">
+          <div class="catalog__sort-arrow-1">
+            <button type="button"><img src="img/icons/arrow-1.png" alt="Стрелочка вверх"></button>
+          </div>
+          <div class="catalog__sort-arrow-2">
+            <button type="button"><img src="img/icons/arrow-2.png" alt="Стрелочка вниз"></button>
+          </div>
+        </div>
       </div>
 
       <ul class="catalog__list">
-
         <li class="catalog__item catalog__item--new">
           <div class="catalog__item-img-wrap">
             <img src="img/items/item-1.png" alt="Любительская селфи-палка">
@@ -163,8 +183,18 @@
         </li>
       </ul>
 
-      <!-- тут будет пагинация -->
-    </section>
+      <div class="catalog__pagination">
+        <button type="button">Назад</button>
+        <ul class="catalog__pagination-list">
+          <li class="catalog__pagination-item">
+            <a href="blank.html">1</a>
+            <a href="blank.html">2</a>
+            <a href="blank.html">3</a>
+          </li>
+        </ul>
+        <button type="button">Вперед</button>
+      </div>
+    </section> <!-- catalog -->
   </main>
 
   <footer class="page-footer">
