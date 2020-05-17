@@ -1,0 +1,11 @@
+.boom {
+    width: 700px;
+    height: 400px;
+    background-image: url(../img/blank.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.catalog__item-actions {
+    display: none;
+}
