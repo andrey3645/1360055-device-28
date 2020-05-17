@@ -62,7 +62,6 @@
 
       <form action="https://echo.htmlacademy.ru/" method="POST">
         <h3>Цвет</h3>
-
         <div class="form__item">
           <input type="checkbox" name="color" id="color-black" checked>
           <label for="color-black">Чёрный</label>
@@ -83,21 +82,18 @@
           <input type="checkbox" name="color" id="color-pink">
           <label for="color-pink">Розовый</label>
         </div>
-
         <h3>Bluetooth</h3>
-
         <div class="form__item radio">
           <input type="radio" name="Bluetooth" id="radio-yes" value="1" checked>
           <label for="radio-yes">Есть</label>
         </div>
-
         <div class="form__item radio">
           <input type="radio" name="Bluetooth" id="radio-no" value="0">
           <label for="radio-no">Нет</label>
         </div>
-
         <input type="submit" value="Показать">
       </form>
+
     </aside> <!-- aside -->
 
     <section class="catalog">
@@ -110,9 +106,9 @@
 
       <ul class="catalog__list">
 
-        <li class="catalog__item">
+        <li class="catalog__item catalog__item--new">
           <div class="catalog__item-img-wrap">
-            <img src="img/items/item-1.png" alt="Любительская селфи-палка">            
+            <img src="img/items/item-1.png" alt="Любительская селфи-палка">
           </div>
           <div class="catalog__item-actions">
             <button type="button">В корзину</button>
@@ -124,86 +120,87 @@
           </div>
         </li>
 
-        <li class="item">
-          <div class="item__inner">
+        <li class="catalog__item catalog__item--new">
+          <div class="catalog__item-img-wrap">
             <img src="img/items/item-2.png" alt="Профессиональная селфи-палка">
           </div>
-
-          <div class="item__inner_hover">
+          <div class="catalog__item-actions">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
-
-          <a href="blank.html">Профессиональная селфи-палка</a>
-          <span>1500 руб.</span>
+          <div class="catalog__description">
+            <a href="blank.html">Профессиональная селфи-палка</a>
+            <span>1500 руб.</span>
+          </div>
         </li>
 
-        <li class="item">
-          <div class="item__inner">
+        <li class="catalog__item catalog__item--new">
+          <div class="catalog__item-img-wrap">
             <img src="img/items/item-3.png" alt="Непотопляемая селфи-палка">
           </div>
-
-          <div class="item__inner_hover">
+          <div class="catalog__item-actions">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
-
-          <a href="blank.html">Непотопляемая селфи-палка</a>
-          <span>2500 руб.</span>
+          <div class="catalog__description">
+            <a href="blank.html">Непотопляемая селфи-палка</a>
+            <span>2500 руб.</span>
+          </div>
         </li>
 
-        <li class="item">
-          <div class="item__inner">
+        <li class="catalog__item catalog__item--new">
+          <div class="catalog__item-img-wrap">
             <img src="img/items/item-4.png" alt="Селфи-палка «Следуй за мной»">
           </div>
-
-          <div class="item__inner_hover">
+          <div class="catalog__item-actions">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
-
-          <a href="blank.html">Селфи-палка «Следуй за мной»</a>
-          <span>4900 руб.</span>
+          <div class="catalog__description">
+            <a href="blank.html">Селфи-палка «Следуй за мной»</a>
+            <span>4900 руб.</span>
+          </div>
         </li>
       </ul>
-
 
       <!-- тут будет пагинация -->
     </section>
   </main>
 
-  <footer>
-    <div class="footer__inner">
+  <footer class="page-footer">
 
-      <section class="footer__left">
-        <h2>Как нас найти</h2>
-        <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </section> <!-- footer__left -->
+    <section class="page-footer__left">
+      <h2>Как нас найти</h2>
+      <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+      <p>г. Москва, ул. Строителей, 15</p>
+    </section> <!-- footer__left -->
 
-      <section class="footer__between">
-        <a href="blank.html">Доставка</a>
-        <a href="blank.html">Гарантия</a>
-        <a href="blank.html">Контакты</a>
-        <h2>Давайте дружить</h2>
-        <ul>
-          <li><a href="blank.html">Фейсбук</a></li>
-          <li><a href="blank.html">Инстаграм</a></li>
-          <li><a href="blank.html">Твиттер</a></li>
-        </ul>
-      </section> <!-- footer__between   -->
+    <section class="page-footer__between">
+      <ul>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Гарантия</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <h2>Давайте дружить</h2>
+      <ul>
+        <li><a href="blank.html">Фейсбук</a></li>
+        <li><a href="blank.html">Инстаграм</a></li>
+        <li><a href="blank.html">Твиттер</a></li>
+      </ul>
+    </section> <!-- footer__between   -->
 
-      <section class="footer__right">
+    <section class="page-footer__right">
+      <div class="page-footer__user-menu">
         <a href="blank.html">Войти</a>
         <a href="blank.html">Сравнить</a>
         <a href="blank.html">Корзина</a>
-        <h2>Как с нами связаться</h2>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <h3>Разработчик</h3>
-        <a href="blank.html"><img src="img/logo-2.png" alt="Логотип HTML-academy"></a>
-      </section> <!-- footer__right -->
+      </div>
+      <h2>Как с нами связаться</h2>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <h3>Разработчик</h3>
+      <a href="blank.html"><img src="img/logo-2.png" alt="Логотип HTML-academy"></a>
+    </section> <!-- footer__right -->
 
-    </div> <!-- footer__inner -->
   </footer>
 
 </body>

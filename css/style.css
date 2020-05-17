@@ -6,6 +6,6 @@
     background-repeat: no-repeat;
 }
 
-.list__item_hover {
+.catalog__item-actions {
     display: none;
 }
