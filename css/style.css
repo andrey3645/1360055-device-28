@@ -1,3 +1,11 @@
+.page-main__slider.second,
+.page-main__slider.third,
+.services__slider.second,
+.services__slider.third,
+.catalog__item-actions {
+    display: none;
+}
+
 .boom {
     width: 700px;
     height: 400px;
@@ -6,6 +14,7 @@
     background-repeat: no-repeat;
 }
 
-.catalog__item-actions {
-    display: none;
+li.popular__item a {
+    display: block;
+    height: 100%;
 }
