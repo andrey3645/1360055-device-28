@@ -11,7 +11,7 @@
 
   <header>
     <div class="header__logo">
-      <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
     </div> <!-- header__logo  -->
     <div class="header__top">
       <div class="header__search">
@@ -45,8 +45,37 @@
   <main class="page-main">
     <h1>Интернет-магазин гаджетов Device</h1>
 
-    <div class="page-main__slider">
+    <div class="page-main__sliders">
+
       <div class="page-main__slider first">
+        <div class="page-main__slider-picture">
+          <img src="img/slider/slider-1 1.png" width="384" height="486" alt="картинка слайда №1">
+        </div>
+        <div class="page-main__slider-description">
+          <p>Делай селфи, как Бен Стиллер!</p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+            5 килограмм.</p>
+        </div>
+        <a href="blank.html">Подробнее</a>
+        <div class="page-main__slider-properties">
+          <ul class="page-main__slider-properties-list">
+            <li class="page-main__slider-properties-item">
+              <p>8,5 м</p>
+              <p>Длина палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>5 кг</p>
+              <p>Вес палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>Карбон</p>
+              <p>Материал</p>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- page-main__slider first -->
+
+      <div class="page-main__slider second">
         <div class="page-main__slider-picture">
           <img src="img/slider/slider-1.png" alt="картинка слайда №1">
         </div>
@@ -56,202 +85,186 @@
             5 килограмм.</p>
         </div>
         <a href="blank.html">Подробнее</a>
-
         <div class="page-main__slider-properties">
           <ul class="page-main__slider-properties-list">
-            <li class="page-main__slider-properties-item-value">8,5 м</li>
-            <li class="page-main__slider-properties-item-value">5 кг</li>
-            <li class="page-main__slider-properties-item-value">Карбон</li>
+            <li class="page-main__slider-properties-item">
+              <p>8,5 м</p>
+              <p>Длина палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>5 кг</p>
+              <p>Вес палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>Карбон</p>
+              <p>Материал</p>
+            </li>
           </ul>
-          <ul class="page-main__properties-list">
-            <li class="page-main__slider-properties-item-description">Длина палки</li>
-            <li class="page-main__slider-properties-item-description">Вес палки</li>
-            <li class="page-main__slider-properties-item-description">Материал</li>
+        </div>
+      </div> <!-- page-main__slider second -->
+
+      <div class="page-main__slider third">
+        <div class="page-main__slider-picture">
+          <img src="img/slider/slider-1.png" alt="картинка слайда №1">
+        </div>
+        <div class="page-main__slider-description">
+          <p>Делай селфи, как Бен Стиллер!</p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+            5 килограмм.</p>
+        </div>
+        <a href="blank.html">Подробнее</a>
+        <div class="page-main__slider-properties">
+          <ul class="page-main__slider-properties-list">
+            <li class="page-main__slider-properties-item">
+              <p>8,5 м</p>
+              <p>Длина палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>5 кг</p>
+              <p>Вес палки</p>
+            </li>
+            <li class="page-main__slider-properties-item">
+              <p>Карбон</p>
+              <p>Материал</p>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- page-main__slider third -->
+
+      <div class="page-main__slider-radio-button">
+        <input type="radio" name="radio-button" id="radio-button-1">
+        <input type="radio" name="radio-button" id="radio-button-2">
+        <input type="radio" name="radio-button" id="radio-button-3">
+      </div>
+
+    </div> <!-- page-main__sliders -->
+
+
+    <section class="popular">
+      <h2>Популярные товары</h2>
+      <ul class="popular__list">
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Виртуальная реальность</a>
+        </li>
+
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Моноподы для селфи</a>
+        </li>
+
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Экшн-камеры</a>
+        </li>
+
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Фитнес-браслеты</a>
+        </li>
+
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Умные часы</a>
+        </li>
+
+        <li class="popular__item popular__item--virtual">
+          <a href="blank.html">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </section> <!-- popular -->
+
+    <section class="services">
+      <div class="services__sliders">
+
+        <div class="services__slider-buttons">
+          <ul class="services__slider-buttons-list">
+            <li class="services__slider-button services__slider-button--active">
+              <button type="button">доставка</button>
+            </li>
+            <li class="services__slider-button">
+              <button type="button">гарантия</button>
+            </li>
+            <li class="services__slider-button">
+              <button type="button">кредит</button>
+            </li>
           </ul>
         </div>
 
-        <div class="page-main__slider second">
-          <div class="page-main__slider-picture">
-            <img src="img/slider/slider-1.png" alt="картинка слайда №1">
-          </div>
-          <div class="page-main__slider-description">
-            <p>Делай селфи, как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-              всего
-              5 килограмм.</p>
-          </div>
-          <a href="blank.html">Подробнее</a>
-          <div class="page-main__slider-properties">
-            <ul class="page-main__slider-properties-list">
-              <li class="page-main__slider-properties-item-value">8,5 м</li>
-              <li class="page-main__slider-properties-item-value">5 кг</li>
-              <li class="page-main__slider-properties-item-value">Карбон</li>
-            </ul>
-            <ul class="page-main__properties-list">
-              <li class="page-main__slider-properties-item-description">Длина палки</li>
-              <li class="page-main__slider-properties-item-description">Вес палки</li>
-              <li class="page-main__slider-properties-item-description">Материал</li>
-            </ul>
+        <div class="services__slider first">
+          <div class="services__slider-description">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/services/delivery 2.svg" width="136" height="164" alt="картинка курьера">
           </div>
         </div>
 
-        <div class="page-main__slider third">
-          <div class="page-main__slider-picture">
-            <img src="img/slider/slider-1.png" alt="картинка слайда №1">
+        <div class="services__slider second">
+          <div class="services__slider-description">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/delivery.png" alt="картинка курьера">
           </div>
-          <div class="page-main__slider-description">
-            <p>Делай селфи, как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-              всего
-              5 килограмм.</p>
+        </div>
+
+        <div class="services__slider third">
+          <div class="services__slider-description">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/delivery.png" alt="картинка курьера">
           </div>
-          <a href="blank.html">Подробнее</a>
-          <div class="page-main__slider-properties">
-            <ul class="page-main__slider-properties-list">
-              <li class="page-main__slider-properties-item-value">8,5 м</li>
-              <li class="page-main__slider-properties-item-value">5 кг</li>
-              <li class="page-main__slider-properties-item-value">Карбон</li>
-            </ul>
-            <ul class="page-main__properties-list">
-              <li class="page-main__slider-properties-item-description">Длина палки</li>
-              <li class="page-main__slider-properties-item-description">Вес палки</li>
-              <li class="page-main__slider-properties-item-description">Материал</li>
-            </ul>
-          </div>
+        </div>
 
-          <div class="page-main__slider-radio-button">
-            <input type="radio" name="radio-button" id="radio-button-1">
-            <input type="radio" name="radio-button" id="radio-button-2">
-            <input type="radio" name="radio-button" id="radio-button-3">
-          </div>
+      </div> <!-- services__sliders -->
+    </section> <!-- services -->
 
-        </div> <!-- slider -->
+    <section class="logos">
+      <h2>Логотипы наших друзей</h2>
+      <ul class="logos__list">
+        <li class="logos__item">
+          <img src="img/logos/logo-1 1.png" alt="Логотип">
+        </li>
+        <li class="logos__item">
+          <img src="img/logos/logo-2 1.png" alt="Логотип">
+        </li>
+        <li class="logos__item">
+          <img src="img/logos/logo-3 1.png" alt="Логотип">
+        </li>
+        <li class="logos__item">
+          <img src="img/logos/logo-4 1.png" alt="Логотип">
+        </li>
+      </ul>
+    </section> <!-- logos -->
 
-        <section class="popular">
-          <h2>Популярные товары</h2>
-          <ul class="popular__list">
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Виртуальная реальность</a>
-            </li>
+    <section class="info">
 
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Моноподы для селфи</a>
-            </li>
+      <div class="info__about">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="blank.html">подробнее о нас</a>
+      </div>
 
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Экшн-камеры</a>
-            </li>
+      <div class="info__contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое бывает.</p>
+        <!-- тут будет карта -->
+        <a href="blank.html">напишите нам</a>
+      </div>
 
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Фитнес-браслеты</a>
-            </li>
-
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Умные часы</a>
-            </li>
-
-            <li class="popular__item popular__item--virtual">
-              <a href="blank.html">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </section> <!-- popular -->
-
-        <section class="services">
-          <div class="services__slider">
-
-            <div class="services__slider-buttons">
-              <ul class="services__slider-buttons-list">
-                <li class="services__slider-button services__slider-button--active">
-                  <button type="button">доставка</button>
-                </li>
-                <li class="services__slider-button">
-                  <button type="button">гарантия</button>
-                </li>
-                <li class="services__slider-button">
-                  <button type="button">кредит</button>
-                </li>
-              </ul>
-            </div>
-
-            <div class="services__slider first">
-              <div class="services__slider-description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/delivery.png" alt="картинка курьера">
-              </div>
-            </div>
-
-            <div class="services__slider second">
-              <div class="services__slider-description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/delivery.png" alt="картинка курьера">
-              </div>
-            </div>
-
-            <div class="services__slider third">
-              <div class="services__slider-description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/delivery.png" alt="картинка курьера">
-              </div>
-            </div>
-
-          </div> <!-- services__slider -->
-        </section> <!-- services -->
-
-        <section class="logos">
-          <h2>Логотипы наших друзей</h2>
-          <ul class="logos__list">
-            <li class="logos__item">
-              <img src="img/logos/logo-1.png" alt="Логотип">
-            </li>
-            <li class="logos__item">
-              <img src="img/logos/logo-2.png" alt="Логотип">
-            </li>
-            <li class="logos__item">
-              <img src="img/logos/logo-3.png" alt="Логотип">
-            </li>
-            <li class="logos__item">
-              <img src="img/logos/logo-4.png" alt="Логотип">
-            </li>
-          </ul>
-        </section> <!-- logos -->
-
-        <section class="info">
-
-          <div class="info__about">
-            <h2>О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-              компаниями:</p>
-            <ul>
-              <li>Деловые линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a href="blank.html">подробнее о нас</a>
-          </div>
-
-          <div class="info__contacts">
-            <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-              Всякое бывает.</p>
-            <!-- тут будет карта -->
-            <a href="blank.html">напишите нам</a>
-          </div>
-
-        </section> <!-- info -->
+    </section> <!-- info -->
   </main>
 
   <footer class="page-footer">
 
     <section class="page-footer__left">
       <h2>Как нас найти</h2>
-      <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
       <p>г. Москва, ул. Строителей, 15</p>
     </section> <!-- footer__left -->
 
@@ -278,7 +291,7 @@
       <h2>Как с нами связаться</h2>
       <p>Тел.: +7 (495) 495-95-95</p>
       <h3>Разработчик</h3>
-      <a href="blank.html"><img src="img/logo-2.png" alt="Логотип HTML-academy"></a>
+      <a href="blank.html"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-academy"></a>
     </section> <!-- footer__right -->
 
   </footer>
