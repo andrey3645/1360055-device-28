@@ -1,7 +1,7 @@
-.page-main__slider-second,
-.page-main__slider-third,
-.services__slider-second,
-.services__slider-third,
+.page-main__slider.second,
+.page-main__slider.third,
+.services__slider.second,
+.services__slider.third,
 .catalog__item-actions {
     display: none;
 }
