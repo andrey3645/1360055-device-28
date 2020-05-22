@@ -1,9 +1,12 @@
-.page-main__slider.second,
-.page-main__slider.third,
-.services__slider.second,
-.services__slider.third,
-.catalog__item-actions {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .boom {
