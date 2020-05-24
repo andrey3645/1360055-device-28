@@ -17,7 +17,6 @@
     background-repeat: no-repeat;
 }
 
-li.popular__item a {
-    display: block;
-    height: 100%;
+.catalog__item-actions {
+    display: none;
 }
