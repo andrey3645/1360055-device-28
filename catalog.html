@@ -11,7 +11,7 @@
 
   <header>
     <div class="header__logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
     </div> <!-- header__logo  -->
     <div class="header__top">
       <div class="header__search">
@@ -32,7 +32,7 @@
           <!-- тут будет выпадающее меню -->
         </div>
         <div class="header__navigation">
-          <ul>
+          <ul class="header__navigation-user-menu">
             <li><a href="blank.html">доставка</a></li>
             <li><a href="blank.html">гарантия</a></li>
             <li><a href="blank.html">контакты</a></li>
@@ -45,58 +45,69 @@
   <main>
     <h1>Моноподы для селфи</h1>
     <ul>
-      <li>Главная</li>
-      <li>Каталог товаров</li>
-      <li>Моноподы для селфи</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li><a>Моноподы для селфи</a></li>
     </ul>
 
     <aside class="filter">
       <h2>Фильтр: </h2>
-      <h3>Стоимость</h3>
-      <div class="filter__range">
-        <input type="range" min="0" max="5000" value="350">
-        <div class="filter__range-diapazon">
-          <div class="filter__range-min">
-            <p>от 0</p>
-          </div>
-          <div class="filter__range-max">
-            <p>до 5000</p>
-          </div>
-        </div>
-      </div>
-
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
-        <h3>Цвет</h3>
-        <div class="filter-form__item">
-          <input type="checkbox" name="color" id="color-black" checked>
-          <label for="color-black">Чёрный</label>
+
+        <h3>Стоимость</h3>
+        <div class="filter__range">
+          <input type="range" min="0" max="5000" value="350">
+          <div class="filter__range-diapazon">
+            <div class="filter__range-min">
+              <p>от 0</p>
+            </div>
+            <div class="filter__range-max">
+              <p>до 5000</p>
+            </div>
+          </div>
         </div>
-        <div class="filter-form__item">
-          <input type="checkbox" name="color" id="color-white">
-          <label for="color-white">Белый</label>
-        </div>
-        <div class="filter-form__item">
-          <input type="checkbox" name="color" id="color-blue" checked>
-          <label for="color-blue">Синий</label>
-        </div>
-        <div class="filter-form__item">
-          <input type="checkbox" name="color" id="color-red" checked>
-          <label for="color-red">Красный</label>
-        </div>
-        <div class="filter-form__item">
-          <input type="checkbox" name="color" id="color-pink">
-          <label for="color-pink">Розовый</label>
-        </div>
-        <h3>Bluetooth</h3>
-        <div class="filter-form__item radio">
-          <input type="radio" name="Bluetooth" id="radio-yes" value="1" checked>
-          <label for="radio-yes">Есть</label>
-        </div>
-        <div class="filter-form__item radio">
-          <input type="radio" name="Bluetooth" id="radio-no" value="0">
-          <label for="radio-no">Нет</label>
-        </div>
-        <input type="submit" value="Показать">
+
+        <fieldset class="filter-form__fieldset">
+          <legend>Цвет</legend>
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <input type="checkbox" name="color" id="color-black" checked>
+              <label for="color-black">Чёрный</label>
+            </li>
+            <li class="filter-form__item">
+              <input type="checkbox" name="color" id="color-white">
+              <label for="color-white">Белый</label>
+            </li>
+            <li class="filter-form__item">
+              <input type="checkbox" name="color" id="color-blue" checked>
+              <label for="color-blue">Синий</label>
+            </li>
+            <li class="filter-form__item">
+              <input type="checkbox" name="color" id="color-red" checked>
+              <label for="color-red">Красный</label>
+            </li>
+            <li class="filter-form__item">
+              <input type="checkbox" name="color" id="color-pink">
+              <label for="color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-form__fieldset">
+          <legend>Bluetooth</legend>
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <input type="radio" name="Bluetooth" id="radio-yes" value="1" checked>
+              <label for="radio-yes">Есть</label>
+            </li>
+            <li class="filter-form__item">
+              <input type="radio" name="Bluetooth" id="radio-no" value="0">
+              <label for="radio-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
       </form>
 
     </aside> <!-- aside -->
@@ -117,10 +128,10 @@
         </ul>
         <div class="catalog__sort-arrows">
           <div class="catalog__sort-up">
-            <button type="button"><span>Up</span></button>
+            <button type="button"><span class="visually-hidden">Up</span></button>
           </div>
           <div class="catalog__sort-down">
-            <button type="button"><span>Down</span></button>
+            <button type="button"><span class="visually-hidden">Down</span></button>
           </div>
         </div>
       </div>
@@ -205,18 +216,18 @@
 
     <section class="page-footer__left">
       <h2>Как нас найти</h2>
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="на главную"></a>
       <p>г. Москва, ул. Строителей, 15</p>
     </section> <!-- footer__left -->
 
     <section class="page-footer__between">
-      <ul>
+      <ul class="page-footer__user-menu">
         <li><a href="blank.html">Доставка</a></li>
         <li><a href="blank.html">Гарантия</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <h2>Давайте дружить</h2>
-      <ul>
+      <ul class="page-footer__social">
         <li><a href="blank.html">Фейсбук</a></li>
         <li><a href="blank.html">Инстаграм</a></li>
         <li><a href="blank.html">Твиттер</a></li>

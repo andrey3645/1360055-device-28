@@ -11,7 +11,7 @@
 
   <header>
     <div class="header__logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
     </div> <!-- header__logo  -->
     <div class="header__top">
       <div class="header__search">
@@ -32,7 +32,7 @@
           <!-- тут будет выпадающее меню -->
         </div>
         <div class="header__navigation">
-          <ul>
+          <ul class="header__navigation-user-menu">
             <li><a href="blank.html">доставка</a></li>
             <li><a href="blank.html">гарантия</a></li>
             <li><a href="blank.html">контакты</a></li>
@@ -75,7 +75,7 @@
         </div>
       </div> <!-- page-main__slider first -->
 
-      <div class="page-main__slider second">
+      <div class="page-main__slider second visually-hidden">
         <div class="page-main__slider-picture">
           <img src="img/slider/slider-1.png" alt="картинка слайда №1">
         </div>
@@ -103,7 +103,7 @@
         </div>
       </div> <!-- page-main__slider second -->
 
-      <div class="page-main__slider third">
+      <div class="page-main__slider third visually-hidden">
         <div class="page-main__slider-picture">
           <img src="img/slider/slider-1.png" alt="картинка слайда №1">
         </div>
@@ -189,12 +189,14 @@
         <div class="services__slider first">
           <div class="services__slider-description">
             <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж.</p>
+            <div class="services__description">
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.</p>
+            </div>
           </div>
         </div>
 
-        <div class="services__slider second">
+        <div class="services__slider second visually-hidden">
           <div class="services__slider-description">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -202,7 +204,7 @@
           </div>
         </div>
 
-        <div class="services__slider third">
+        <div class="services__slider third visually-hidden">
           <div class="services__slider-description">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -261,18 +263,18 @@
 
     <section class="page-footer__left">
       <h2>Как нас найти</h2>
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="на главную"></a>
       <p>г. Москва, ул. Строителей, 15</p>
     </section> <!-- footer__left -->
 
     <section class="page-footer__between">
-      <ul>
+      <ul class="page-footer__user-menu">
         <li><a href="blank.html">Доставка</a></li>
         <li><a href="blank.html">Гарантия</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <h2>Давайте дружить</h2>
-      <ul>
+      <ul class="page-footer__social">
         <li><a href="blank.html">Фейсбук</a></li>
         <li><a href="blank.html">Инстаграм</a></li>
         <li><a href="blank.html">Твиттер</a></li>
