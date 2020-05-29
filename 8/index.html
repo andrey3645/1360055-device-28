@@ -3,51 +3,53 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Девайс</title>
   <base href="https://htmlacademy-htmlcss.github.io/1360055-device-28/8/">
 </head>
 
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
+      </div> <!-- header__logo  -->
 
-  <header class="header">
-    <div class="header__logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
-    </div> <!-- header__logo  -->
+      <div class="header__top">
+        <div class="header__search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+        </div>
+        <div class="header__menu">
+          <a href="blank.html">Войти</a>
+          <a href="blank.html">Сравнить</a>
+          <a href="blank.html">Корзина</a>
+        </div>
+      </div> <!-- header__top -->
 
-    <div class="header__top">
-      <div class="header__search">
-        <input type="text" name="search" placeholder="Поиск по сайту">
-      </div>
-      <div class="header__menu">
-        <a href="blank.html">Войти</a>
-        <a href="blank.html">Сравнить</a>
-        <a href="blank.html">Корзина</a>
-      </div>
-    </div> <!-- header__top -->
-
-    <nav class="header__bottom">
-      <div class="header__submenu">
-        <a href="catalog.html">каталог товаров</a>
-      </div>
-      <div class="header__submenu_hover">
-        <!-- тут будет выпадающее меню -->
-      </div>
-      <div class="header__navigation">
-        <ul class="header__navigation-user-menu">
-          <li><a href="blank.html">доставка</a></li>
-          <li><a href="blank.html">гарантия</a></li>
-          <li><a href="blank.html">контакты</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- header__bottom -->
-  </header>
+      <nav class="header__bottom">
+        <div class="header__submenu">
+          <a href="catalog.html">каталог товаров</a>
+        </div>
+        <div class="header__submenu_hover">
+          <!-- тут будет выпадающее меню -->
+        </div>
+        <div class="header__navigation">
+          <ul class="header__navigation-user-menu">
+            <li><a href="blank.html">доставка</a></li>
+            <li><a href="blank.html">гарантия</a></li>
+            <li><a href="blank.html">контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header__bottom -->
+    </header>
+  </div>
 
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
     <div class="page-main__sliders-wrapper">
-      <div class="page-main__sliders">
+      <div class="page-main__sliders-view">
 
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -61,93 +63,81 @@
 
         <div class="page-main__sliders-inner">
 
-          <div class="page-main__slider first">
+          <div class="page-main__slider slider-first">
             <div class="page-main__slider-picture">
               <img src="img/slider/slider-1.png" width="384" height="486" alt="картинка слайда №1">
             </div>
             <div class="page-main__slider-description">
-              <p class="title">Делай селфи, <br> как Бен Стиллер!</p>
-              <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-                метров
-                длиной и весом всего
-                5 килограмм.</p>
+              <p class="strong">Делай селфи, <br> как Бен Стиллер!</p>
+              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) длиной и весом всего 5 килограмм.</p>
               <a href="blank.html" class="button">Подробнее</a>
-              <div class="page-main__slider-properties">
-                <ul class="page-main__slider-properties-list">
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">8,5 м</p>
-                    <p>Длина палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">5 кг</p>
-                    <p>Вес палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">Карбон</p>
-                    <p>Материал</p>
-                  </li>
-                </ul>
-              </div>
+              <ul class="page-main__slider-properties-list">
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">8,5 м</p>
+                  <p>Длина палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">5 кг</p>
+                  <p>Вес палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">Карбон</p>
+                  <p>Материал</p>
+                </li>
+              </ul>
             </div>
           </div> <!-- page-main__slider first -->
 
-          <div class="page-main__slider first">
+          <div class="page-main__slider">
             <div class="page-main__slider-picture">
               <img src="img/slider/slider-2.png" width="384" height="486" alt="картинка слайда №1">
             </div>
             <div class="page-main__slider-description">
-              <p class="title">Делай селфи, <br> как Бен Стиллер!</p>
-              <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-                метров
-                длиной и весом всего
-                5 килограмм.</p>
+              <p class="strong">Делай селфи, <br> как Бен Стиллер!</p>
+              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) длиной и весом всего 5 килограмм.</p>
               <a href="blank.html" class="button">Подробнее</a>
-              <div class="page-main__slider-properties">
-                <ul class="page-main__slider-properties-list">
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">8,5 м</p>
-                    <p>Длина палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">5 кг</p>
-                    <p>Вес палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">Карбон</p>
-                    <p>Материал</p>
-                  </li>
-                </ul>
-              </div>
+              <ul class="page-main__slider-properties-list">
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">8,5 м</p>
+                  <p>Длина палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">5 кг</p>
+                  <p>Вес палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">Карбон</p>
+                  <p>Материал</p>
+                </li>
+              </ul>
             </div>
           </div> <!-- page-main__slider second -->
 
-          <div class="page-main__slider first">
+          <div class="page-main__slider">
             <div class="page-main__slider-picture">
               <img src="img/slider/slider-3.png" width="384" height="486" alt="картинка слайда №1">
             </div>
             <div class="page-main__slider-description">
-              <p class="title">Делай селфи, <br> как Бен Стиллер!</p>
-              <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-                метров
-                длиной и весом всего
-                5 килограмм.</p>
+              <p class="strong">Делай селфи, <br> как Бен Стиллер!</p>
+              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) длиной и весом всего 5 килограмм.</p>
               <a href="blank.html" class="button">Подробнее</a>
-              <div class="page-main__slider-properties">
-                <ul class="page-main__slider-properties-list">
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">8,5 м</p>
-                    <p>Длина палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">5 кг</p>
-                    <p>Вес палки</p>
-                  </li>
-                  <li class="page-main__slider-properties-item">
-                    <p class="slider-properties-item-title">Карбон</p>
-                    <p>Материал</p>
-                  </li>
-                </ul>
-              </div>
+              <ul class="page-main__slider-properties-list">
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">8,5 м</p>
+                  <p>Длина палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">5 кг</p>
+                  <p>Вес палки</p>
+                </li>
+                <li class="page-main__slider-properties-item">
+                  <p class="slider-properties-item-title">Карбон</p>
+                  <p>Материал</p>
+                </li>
+              </ul>
             </div>
           </div> <!-- page-main__slider third -->
 
@@ -193,7 +183,7 @@
             <li class="services__slider-button services__slider-button--active">
               <button type="button" class="button">доставка</button>
             </li>
-            <li class="services__slider-button">
+            <li class="services__slider-button ">
               <button type="button" class="button">гарантия</button>
             </li>
             <li class="services__slider-button">
@@ -254,7 +244,8 @@
         <h2 class="title">О нас</h2>
         <p class="description info__about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть
           в каждом из нас.</p>
-        <p class="description info__about-description-2">Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p class="description info__about-description-2">Мы можем доставить ваш товар в самые отдаленные точки <br>
+          России!
           DEVICE работает со многими
           транспортными
           компаниями:</p>
@@ -263,7 +254,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="blank.html" class="button">подробнее о нас</a>
+        <a href="blank.html" class="button button-info">подробнее о нас</a>
       </div>
 
       <div class="info__contacts">
@@ -274,7 +265,7 @@
         <div class="info__contacts-map">
           <img src="img/map 1.png" alt="">
         </div>
-        <a href="blank.html" class="button">напишите нам</a>
+        <a href="blank.html" class="button button-contacts">напишите нам</a>
       </div>
 
     </section> <!-- info -->
@@ -305,9 +296,9 @@
 
       <section class="page-footer__right">
         <div class="page-footer__user-menu-2">
-          <a href="blank.html">Войти</a>
-          <a href="blank.html">Сравнить</a>
-          <a href="blank.html">Корзина</a>
+          <a class="enter" href="blank.html">Войти</a>
+          <a class="chart" href="blank.html">Сравнить</a>
+          <a class="cart" href="blank.html">Корзина</a>
         </div>
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p class="phone">Тел.: +7 (495) 495-95-95</p>
