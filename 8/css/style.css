@@ -1,24 +1,38 @@
 /* FONTS */
 
-/* Gilroy */
 @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url(../fonts/gilroy/gilroylight.woff2) format('woff2'), url(../fonts/gilroy/gilroylight.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url(../fonts/gilroy/gilroyextrabold.woff2) format('woff2'), url(../fonts/gilroy/gilroyextrabold.woff) format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Gilroy */
+/* @font-face {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
     src:
         url(../fonts/gilroy/gilroylight.woff2) format('woff2'),
         url(../fonts/gilroy/gilroylight.woff) format('woff');
-}
+} */
 
 /* Gilroy */
-@font-face {
+/* @font-face {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 800;
     src:
         url(../fonts/gilroy/gilroyextrabold.woff2) format('woff2'),
         url(../fonts/gilroy/gilroyextrabold.woff) format('woff');
-}
+} */
 
 /* open-sans-regular - cyrillic */
 @font-face {
