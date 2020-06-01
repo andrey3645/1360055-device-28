@@ -1,5 +1,25 @@
  /* FONTS */
 
+ /* Gilroy */
+ @font-face {
+     font-family: 'Gilroy';
+     font-style: normal;
+     font-weight: 300;
+     src:
+         url(../fonts/gilroy/gilroylight.woff2) format('woff2'),
+         url(../fonts/gilroy/gilroylight.woff) format('woff');
+ }
+
+ /* Gilroy */
+ @font-face {
+     font-family: 'Gilroy';
+     font-style: normal;
+     font-weight: 800;
+     src:
+         url(../fonts/gilroy/gilroyextrabold.woff2) format('woff2'),
+         url(../fonts/gilroy/gilroyextrabold.woff) format('woff');
+ }
+
  /* open-sans-regular - cyrillic */
  @font-face {
      font-family: 'Open Sans';
@@ -18,28 +38,6 @@
      src: local('Open Sans'), local('Open-Sans'),
          url(../fonts/open-sans/open-sans-v17-cyrillic-700.woff2) format('woff2'),
          url(../fonts/open-sans/open-sans-v17-cyrillic-700.woff) format('woff');
- }
-
- /* Gilroy */
-
- @font-face {
-     font-family: 'Gilroy';
-     font-style: normal;
-     font-weight: 300;
-     src: local('Gilroy'),
-         url(../fonts/gilroy/gilroylight.woff2) format('woff2'),
-         url(../fonts/gilroy/gilroylight.woff) format('woff');
- }
-
- /* Gilroy */
-
- @font-face {
-     font-family: 'Gilroy';
-     font-style: normal;
-     font-weight: 800;
-     src: local('Gilroy'),
-         url(../fonts/gilroy/gilroyextrabold.woff2) format('woff2'),
-         url(../fonts/gilroy/gilroyextrabold.woff) format('woff');
  }
 
  /* BUTTONS */
