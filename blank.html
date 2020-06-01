@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,24 +7,26 @@
   <title>HTML Academy: Девайс</title>
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
-    <div class="header__logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
-    </div> <!-- header__logo  -->
-    <div class="header__top">
-      <div class="header__search">
-        <input type="text" name="search" placeholder="Поиск по сайту">
-      </div>
-      <div class="header__menu">
-        <a href="blank.html">Войти</a>
-        <a href="blank.html">Сравнить</a>
-        <a href="blank.html">Корзина</a>
-      </div>
-    </div> <!-- header__top -->
-    <div class="header__bottom">
-      <nav>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
+      </div> <!-- header__logo  -->
+
+      <div class="header__top">
+        <div class="header__search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+        </div>
+        <div class="header__menu">
+          <a href="blank.html">Войти</a>
+          <a href="blank.html">Сравнить</a>
+          <a href="blank.html">Корзина</a>
+        </div>
+      </div> <!-- header__top -->
+
+      <nav class="header__bottom">
         <div class="header__submenu">
           <a href="catalog.html">каталог товаров</a>
         </div>
@@ -39,8 +41,9 @@
           </ul>
         </div>
       </nav>
-    </div> <!-- header__bottom -->
-  </header>
+      <!-- header__bottom -->
+    </header>
+  </div>
 
   <main>
     <section class="boom">
@@ -49,38 +52,40 @@
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-inner">
 
-    <section class="page-footer__left">
-      <h2>Как нас найти</h2>
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="на главную"></a>
-      <p>г. Москва, ул. Строителей, 15</p>
-    </section> <!-- footer__left -->
+      <section class="page-footer__left">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <a href="index.html"><img src="img/logo-yellow.png" width="163" height="35" alt="на главную"></a>
+        <p class="adress">г. Москва, ул. Строителей, 15</p>
+      </section> <!-- footer__left -->
 
-    <section class="page-footer__between">
-      <ul class="page-footer__user-menu">
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Гарантия</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <h2>Давайте дружить</h2>
-      <ul class="page-footer__social">
-        <li><a href="blank.html">Фейсбук</a></li>
-        <li><a href="blank.html">Инстаграм</a></li>
-        <li><a href="blank.html">Твиттер</a></li>
-      </ul>
-    </section> <!-- footer__between   -->
+      <section class="page-footer__between">
+        <ul class="page-footer__user-menu">
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Гарантия</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <h2 class="visually-hidden">Давайте дружить</h2>
+        <ul class="page-footer__social">
+          <li><a href="blank.html"><img src="img/socials/simple-icons_facebook.svg" alt="Фейсбук">Фейсбук</a></li>
+          <li><a href="blank.html"><img src="img/socials/icon_instagram.svg" alt="Инстаграм">Инстаграм</a></li>
+          <li><a href="blank.html"><img src="img/socials/icon_twitter.svg" alt="Твиттер">Твиттер</a></li>
+        </ul>
+      </section> <!-- footer__between   -->
 
-    <section class="page-footer__right">
-      <div class="page-footer__user-menu">
-        <a href="blank.html">Войти</a>
-        <a href="blank.html">Сравнить</a>
-        <a href="blank.html">Корзина</a>
-      </div>
-      <h2>Как с нами связаться</h2>
-      <p>Тел.: +7 (495) 495-95-95</p>
-      <h3>Разработчик</h3>
-      <a href="blank.html"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-academy"></a>
-    </section> <!-- footer__right -->
+      <section class="page-footer__right">
+        <div class="page-footer__user-menu-2">
+          <a class="enter" href="blank.html">Войти</a>
+          <a class="chart" href="blank.html">Сравнить</a>
+          <a class="cart" href="blank.html">Корзина</a>
+        </div>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        <h3 class="visually-hidden">Разработчик</h3>
+        <a href="blank.html"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-academy"></a>
+      </section> <!-- footer__right -->
+    </div>
 
   </footer>
 </body>
