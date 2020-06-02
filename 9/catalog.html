@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Девайс</title>
   <base href="https://htmlacademy-htmlcss.github.io/1360055-device-28/9/">
@@ -10,39 +11,41 @@
 
 <body class="page-body">
 
-  <header class="header">
-    <div class="header__logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
-    </div> <!-- header__logo  -->
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="На главную страницу"></a>
+      </div> <!-- header__logo  -->
 
-    <div class="header__top">
-      <div class="header__search">
-        <input type="text" name="search" placeholder="Поиск по сайту">
-      </div>
-      <div class="header__menu">
-        <a href="blank.html">Войти</a>
-        <a href="blank.html">Сравнить</a>
-        <a href="blank.html">Корзина</a>
-      </div>
-    </div> <!-- header__top -->
+      <div class="header__top">
+        <div class="header__search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+        </div>
+        <div class="header__menu">
+          <a href="blank.html">Войти</a>
+          <a href="blank.html">Сравнить</a>
+          <a href="blank.html">Корзина</a>
+        </div>
+      </div> <!-- header__top -->
 
-    <nav class="header__bottom">
-      <div class="header__submenu">
-        <a href="catalog.html">каталог товаров</a>
-      </div>
-      <div class="header__submenu_hover">
-        <!-- тут будет выпадающее меню -->
-      </div>
-      <div class="header__navigation">
-        <ul class="header__navigation-user-menu">
-          <li><a href="blank.html">доставка</a></li>
-          <li><a href="blank.html">гарантия</a></li>
-          <li><a href="blank.html">контакты</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- header__bottom -->
-  </header>
+      <nav class="header__bottom">
+        <div class="header__submenu">
+          <a href="catalog.html">каталог товаров</a>
+        </div>
+        <div class="header__submenu_hover">
+          <!-- тут будет выпадающее меню -->
+        </div>
+        <div class="header__navigation">
+          <ul class="header__navigation-user-menu">
+            <li><a href="blank.html">доставка</a></li>
+            <li><a href="blank.html">гарантия</a></li>
+            <li><a href="blank.html">контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header__bottom -->
+    </header>
+  </div> <!-- container -->
 
   <main class="catalog-page">
 
@@ -206,6 +209,50 @@
                   <span>4900 руб.</span>
                 </div>
               </li>
+
+              <li class="catalog__item catalog__item--new">
+                <div class="catalog__item-img-wrap">
+                  <img src="img/items/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
+                </div>
+                <div class="catalog__item-actions">
+                  <button type="button">В корзину</button>
+                  <button type="button">Добавить к сравнению</button>
+                </div>
+                <div class="catalog__description">
+                  <a href="blank.html">Селфи-палка «Следуй за мной»</a>
+                  <span>4900 руб.</span>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item--new">
+                <div class="catalog__item-img-wrap">
+                  <img src="img/items/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
+                </div>
+                <div class="catalog__item-actions">
+                  <button type="button">В корзину</button>
+                  <button type="button">Добавить к сравнению</button>
+                </div>
+                <div class="catalog__description">
+                  <a href="blank.html">Селфи-палка «Следуй за мной»</a>
+                  <span>4900 руб.</span>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item--new">
+                <div class="catalog__item-img-wrap">
+                  <img src="img/items/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
+                </div>
+                <div class="catalog__item-actions">
+                  <button type="button">В корзину</button>
+                  <button type="button">Добавить к сравнению</button>
+                </div>
+                <div class="catalog__description">
+                  <a href="blank.html">Селфи-палка «Следуй за мной»</a>
+                  <span>4900 руб.</span>
+                </div>
+              </li>
+
+
 
             </ul>
 
