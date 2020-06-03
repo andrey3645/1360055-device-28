@@ -647,6 +647,7 @@ button.services__slider-button--active {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
 .logos__item {
@@ -709,6 +710,7 @@ button.services__slider-button--active {
     display: flex;
     justify-content: space-between;
     padding-bottom: 86px;
+    padding-top: 40px;
 }
 
 /* info-about */
@@ -949,16 +951,20 @@ p.info__contacts-description {
 .page-footer__user-menu-2 {
     display: flex;
     justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 63px;
 }
 
 .user-menu-2-item {
-    padding: 47px 0 73px 63px;
+    padding-left: 40px;
 }
 
 .page-footer__user-menu-2 a {
     position: relative;
     display: block;
     color: var(--basic-grey-light);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .page-footer__user-menu-2 a:hover {
@@ -975,26 +981,25 @@ p.info__contacts-description {
     height: 14px;
     content: '';
     position: absolute;
-    top: 4px;
     left: -25px;
 }
 
 .user-menu-2-item:nth-child(1) a::before {
     background-image: url(../img/icons/icon_user-yellow.png);
     background-repeat: no-repeat;
-    top: 4px;
+    top: 9px;
 }
 
 .user-menu-2-item:nth-child(2) a::before {
     background-image: url(../img/icons/icon_chart-yellow.png);
     background-repeat: no-repeat;
-    top: 6px;
+    top: 10px;
 }
 
 .user-menu-2-item:nth-child(3) a::before {
     background-image: url(../img/icons/icon_cart-yellow.png);
     background-repeat: no-repeat;
-    top: 6px;
+    top: 10px;
 }
 
 p.phone {
@@ -1002,13 +1007,13 @@ p.phone {
     padding: 0 0 67px 0;
 }
 
-a.copyright:hover{
- opacity: 0.6;
+a.copyright:hover {
+    opacity: 0.6;
 }
 
-a.copyright:active{
+a.copyright:active {
     opacity: 0.3;
-   }
+}
 
 /* CATALOG.HTML */
 
@@ -1032,8 +1037,8 @@ a.copyright:active{
 }
 
 .crumbs {
-    padding: 0;   
-    margin: 0; 
+    padding: 0;
+    margin: 0;
     display: flex;
     list-style: none;
     padding-bottom: 50px;
