@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Девайс</title>
 </head>
@@ -35,11 +36,34 @@
 
         <nav class="header__bottom">
           <div class="header__submenu">
-            <a href="catalog.html">каталог товаров</a>
-          </div>
-          <div class="header__submenu_hover">
-            <!-- тут будет выпадающее меню -->
-          </div>
+            <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
+            <div class="sub-menu-wrapper">              
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Виртуальная реальность</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Моноподы для селфи</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div> 
+          </div> <!-- header__submenu -->     
           <div class="header__navigation">
             <ul class="header__navigation-user-menu">
               <li><a href="blank.html">доставка</a></li>
@@ -164,9 +188,9 @@
         <label>Текст письма:</label>
         <textarea name="message-text" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
         <button class="button">Отправить</button>
-      </div>
-      <button class="close"></button>
+      </div>      
     </form>
+    <button class="close"></button>
   </div> <!-- message-popup-wrapper -->
 
   <div class="map-popup-wrapper">
