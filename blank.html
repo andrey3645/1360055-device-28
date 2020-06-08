@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Девайс</title>
 </head>
@@ -35,11 +36,34 @@
 
         <nav class="header__bottom">
           <div class="header__submenu">
-            <a href="catalog.html">каталог товаров</a>
-          </div>
-          <div class="header__submenu_hover">
-            <!-- тут будет выпадающее меню -->
-          </div>
+            <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
+            <div class="sub-menu-wrapper">              
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Виртуальная реальность</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Моноподы для селфи</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div> 
+          </div> <!-- header__submenu -->     
           <div class="header__navigation">
             <ul class="header__navigation-user-menu">
               <li><a href="blank.html">доставка</a></li>
@@ -48,8 +72,36 @@
             </ul>
           </div>
         </nav>
-        <!-- header__bottom -->
       </div> <!-- header__inner -->
+      <div class="sub-menu">
+        <div class="sub-menu__inner">
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <a href="blank.html">Виртуальная реальность</a>
+            </li>
+            <li class="sub-menu-item">
+              <a href="blank.html">Моноподы для селфи</a>
+            </li>
+            <li class="sub-menu-item">
+              <a href="blank.html">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <a href="blank.html">Фитнес-браслеты</a>
+            </li>
+            <li class="sub-menu-item">
+              <a href="blank.html">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <a href="blank.html">Квадрокоптер</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- sub-menu     -->
+      <!-- header__bottom -->
     </header>
   </div> <!-- container -->
 
@@ -101,6 +153,9 @@
 
       <section class="page-footer__right">
         <div class="page-footer__user-menu-2">
+          <div class="user-menu-2-item visually-hidden">
+            <a href="blank.html">Валентин Петухов</a>
+          </div>
           <div class="user-menu-2-item">
             <a href="blank.html">Войти</a>
           </div>
@@ -120,6 +175,32 @@
       </section> <!-- footer__right -->
     </div> <!-- page-footer-inner -->
   </footer>
+
+  <div class="message-popup-wrapper message-popup--active">
+    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="GET">
+      <div class="message-popup__inner">
+        <label>Ваше имя:
+          <input type="text" name="full-name" placeholder="Имя Фамилия">
+        </label>
+        <label>Ваш e-mail:
+          <input type="e-mail" name="e-mail" placeholder="email@example.com">
+        </label>
+        <label>Текст письма:</label>
+        <textarea name="message-text" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
+        <button class="button">Отправить</button>
+      </div>      
+    </form>
+    <button class="close"></button>
+  </div> <!-- message-popup-wrapper -->
+
+  <div class="map-popup-wrapper">
+    <div class="map-popup">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.5098452718172!2d29.980857669215887!3d60.043580811611335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696494cfe1fca87%3A0x9b197f27d599b190!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3NzAx!5e0!3m2!1sru!2sru!4v1591450237708!5m2!1sru!2sru"
+        width="960" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </div>
 </body>
 
 </html>
