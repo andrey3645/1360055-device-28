@@ -40,11 +40,35 @@
 
         <nav class="header__bottom">
           <div class="header__submenu">
-            <a href="catalog.html">каталог товаров</a>
-          </div>
-          <div class="header__submenu_hover">
-            <!-- тут будет выпадающее меню -->
-          </div>
+            <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
+            <div class="sub-menu-wrapper">              
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Виртуальная реальность</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Моноподы для селфи</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="blank.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-list">
+                <li class="sub-menu-item">
+                  <a href="blank.html">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div> 
+          </div> <!-- header__submenu -->          
+
           <div class="header__navigation">
             <ul class="header__navigation-user-menu">
               <li><a href="blank.html">доставка</a></li>
@@ -54,34 +78,7 @@
           </div>
         </nav>
       </div> <!-- header__inner -->
-      <div class="sub-menu">
-        <div class="sub-menu__inner">
-          <ul class="sub-menu-list">
-            <li class="sub-menu-item">
-              <a href="blank.html">Виртуальная реальность</a>
-            </li>
-            <li class="sub-menu-item">
-              <a href="blank.html">Моноподы для селфи</a>
-            </li>
-            <li class="sub-menu-item">
-              <a href="blank.html">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="sub-menu-list">
-            <li class="sub-menu-item">
-              <a href="blank.html">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-menu-item">
-              <a href="blank.html">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="sub-menu-list">
-            <li class="sub-menu-item">
-              <a href="blank.html">Квадрокоптер</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!-- sub-menu     -->
+
       <!-- header__bottom -->
     </header>
   </div> <!-- container -->
@@ -226,28 +223,31 @@
             </li>
           </ul>
 
-          <div class="services__slider first">
-            <div class="services__slider-description">
-              <h2 class="title">Доставка</h2>
-              <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
+          <div class="services__sliders-list">
+            <div class="services__slider first active">
+              <div class="services__slider-description">
+                <h2 class="title">Доставка</h2>
+                <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                  бесплатно!
+                  Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="services__slider second visually-hidden">
-            <div class="services__slider-description">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
+            <div class="services__slider second">
+              <div class="services__slider-description">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="services__slider third visually-hidden">
-            <div class="services__slider-description">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
+            <div class="services__slider third">
+              <div class="services__slider-description">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж.</p>
+              </div>
             </div>
           </div>
         </div> <!-- services__sliders -->
@@ -375,8 +375,8 @@
         <textarea name="message-text" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
         <button class="button">Отправить</button>
       </div>
-      <button class="close"></button>
     </form>
+    <button class="close"></button>
   </div> <!-- message-popup-wrapper -->
 
   <div class="map-popup-wrapper">
