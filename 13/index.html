@@ -19,9 +19,10 @@
         </div> <!-- header__logo  -->
 
         <div class="header__top">
-          <div class="header__search">
+          <form class="header__search" action="https://echo.htmlacademy.ru/" method="POST">            
             <input type="text" name="search" placeholder="Поиск по сайту">
-          </div>
+            <button class="search" type="submit" name="search" tabindex="0">Найти</button>            
+          </form>
           <div class="header__menu">
             <div class="header__menu-item">
               <a href="blank.html">Войти</a>
@@ -43,34 +44,18 @@
             <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
             <div class="sub-menu-wrapper">
               <ul class="sub-menu-list">
-
-                <li class="sub-menu-items">
-                  <div class="sub-menu-item">
+                <li class="sub-menu-column">                  
                     <a href="blank.html">Виртуальная реальность</a>
-                  </div>
-                  <div class="sub-menu-item">
                     <a href="blank.html">Моноподы для селфи</a>
-                  </div>
-                  <div class="sub-menu-item">
                     <a href="blank.html">Экшн-камеры</a>
-                  </div>
                 </li>
-
-                <li class="sub-menu-items">
-                  <div class="sub-menu-item">
+                <li class="sub-menu-column">
                     <a href="blank.html">Фитнес-браслеты</a>
-                  </div>
-                  <div class="sub-menu-item">
                     <a href="blank.html">Умные часы</a>
-                  </div>
                 </li>
-
-                <li class="sub-menu-items">
-                  <div class="sub-menu-item">
+                <li class="sub-menu-column">
                     <a href="blank.html">Квадрокоптер</a>
-                  </div>
                 </li>
-
               </ul>
             </div>
           </div> <!-- header__submenu -->
@@ -127,13 +112,14 @@
           </div>
           <div class="page-main__slide-description">
             <p class="slide-description-title">Худеем <br> правильно!</p>
-            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+              соблюдать диету.</p>
             <a class="button" href="blank.html">подробнее</a>
             <ul class="description__properties-list">
               <li class="description__properties-item">
                 <p class="properties">48 часов</p>
                 <p class="properties-name">Без подзарядки</p>
-              </li>              
+              </li>
             </ul>
           </div>
         </div> <!-- page-main__slide -->
@@ -144,7 +130,8 @@
           </div>
           <div class="page-main__slide-description">
             <p class="slide-description-title">Порхает как бабочка, жалит как пчела!</p>
-            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
             <a class="button" href="blank.html">подробнее</a>
             <ul class="description__properties-list">
               <li class="description__properties-item">
@@ -357,17 +344,17 @@
   </footer>
 
   <div class="message-popup-wrapper">
-    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="GET">
+    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="POST">
       <div class="message-popup__inner">
         <label>Ваше имя:
-          <input type="text" name="full-name" placeholder="Имя Фамилия">
+          <input type="text" name="full-name" value="" placeholder="Имя Фамилия" required>
         </label>
         <label>Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
+          <input type="email" name="email" value="" placeholder="email@example.com" required>
         </label>
         <label>Текст письма:</label>
-        <textarea name="message-text" cols="100" rows="10" placeholder="В свободной форме"></textarea>
-        <button class="button">Отправить</button>
+        <textarea name="message-text" cols="100" rows="10" value="" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="button">Отправить</button>
       </div>
     </form>
     <button class="close"></button>
@@ -381,7 +368,7 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <script src="js/message.js"></script>
 
 </body>
 
