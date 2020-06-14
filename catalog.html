@@ -17,7 +17,7 @@
         </div> <!-- header__logo  -->
 
         <div class="header__top">
-          <form class="header__search" action="https://echo.htmlacademy.ru/" method="POST">            
+          <form class="header__search" action="https://echo.htmlacademy.ru/" method="GET">            
             <input type="text" name="search" placeholder="Поиск по сайту">
             <button class="search" type="submit" name="search" tabindex="0">Найти</button>            
           </form>
@@ -145,7 +145,7 @@
               <ul class="filter-form__list">
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="black" checked>
                     <span class="check__box"></span>
                     Чёрный
                   </label>
@@ -153,7 +153,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color">
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="wight">
                     <span class="check__box"></span>
                     Белый
                   </label>
@@ -161,7 +161,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="blue" checked>
                     <span class="check__box"></span>
                     Синий
                   </label>
@@ -169,7 +169,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="red" checked>
                     <span class="check__box"></span>
                     Красный
                   </label>
@@ -177,7 +177,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color">
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="pink">
                     <span class="check__box"></span>
                     Розовый
                   </label>
@@ -190,14 +190,14 @@
               <ul class="filter-form__list">
                 <li class="filter-form__item">
                   <label>
-                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="1" checked>
+                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="yes" checked>
                     <span class="radio__box"></span>
                     Есть
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label>
-                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="1">
+                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="no">
                     <span class="radio__box"></span>
                     Нет
                   </label>

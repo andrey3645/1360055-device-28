@@ -994,6 +994,7 @@ p.info__contacts-description {
     height: 222px;
     background-color: var(--basic-grey-light);
     margin-bottom: 73px;
+    cursor: pointer;
 }
 
 .button-info {
@@ -1977,17 +1978,49 @@ button.close:active {
     left: 50%;
     margin-left: -500px;
     display: none;
+    
 }
 
 
 .map-popup {
+    margin: auto;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .map-popup iframe {
     border: none;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+button.map-close {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: var(--special-yellow-dark);
+    border-radius: 50%;
+    top: 42px;
+    right: 48px;
+    background-image: url(../img/popup/cross-close.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button.map-close:hover {
+    opacity: 1;
+}
+
+button.map-close:active {
+    opacity: 0.3;
 }
 
 /* модификаторы */
