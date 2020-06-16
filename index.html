@@ -18,9 +18,10 @@
         </div> <!-- header__logo  -->
 
         <div class="header__top">
-          <div class="header__search">
+          <form class="header__search" action="https://echo.htmlacademy.ru/" method="GET">            
             <input type="text" name="search" placeholder="Поиск по сайту">
-          </div>
+            <button class="search" type="submit" name="search" tabindex="0">Найти</button>            
+          </form>
           <div class="header__menu">
             <div class="header__menu-item">
               <a href="blank.html">Войти</a>
@@ -42,34 +43,18 @@
             <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
             <div class="sub-menu-wrapper">
               <ul class="sub-menu-list">
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                <li class="sub-menu-column">                  
                     <a href="blank.html">Виртуальная реальность</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Экшн-камеры</a>
-                  </li>
-                </div>
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                </li>
+                <li class="sub-menu-column">
                     <a href="blank.html">Фитнес-браслеты</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Умные часы</a>
-                  </li>
-                </div>
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                </li>
+                <li class="sub-menu-column">
                     <a href="blank.html">Квадрокоптер</a>
-                  </li>
-                </div>
-
+                </li>
               </ul>
             </div>
           </div> <!-- header__submenu -->
@@ -125,23 +110,14 @@
             <img src="img/slider/slider-2.png" alt="первый слайд">
           </div>
           <div class="page-main__slide-description">
-            <p class="slide-description-title">Делай селфи, <br> как Бен Стиллер!</p>
-            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-              метров длиной и весом
-              всего 5 килограмм.</p>
+            <p class="slide-description-title">Худеем <br> правильно!</p>
+            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+              соблюдать диету.</p>
             <a class="button" href="blank.html">подробнее</a>
             <ul class="description__properties-list">
               <li class="description__properties-item">
-                <p class="properties">8,5 м</p>
-                <p class="properties-name">Длина палки</p>
-              </li>
-              <li class="description__properties-item">
-                <p class="properties">5 кг</p>
-                <p class="properties-name">Вес палки</p>
-              </li>
-              <li class="description__properties-item">
-                <p class="properties">Карбон</p>
-                <p class="properties-name">Материал</p>
+                <p class="properties">48 часов</p>
+                <p class="properties-name">Без подзарядки</p>
               </li>
             </ul>
           </div>
@@ -152,10 +128,9 @@
             <img src="img/slider/slider-3.png" alt="первый слайд">
           </div>
           <div class="page-main__slide-description">
-            <p class="slide-description-title">Делай селфи, <br> как Бен Стиллер!</p>
-            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-              метров длиной и весом
-              всего 5 килограмм.</p>
+            <p class="slide-description-title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
             <a class="button" href="blank.html">подробнее</a>
             <ul class="description__properties-list">
               <li class="description__properties-item">
@@ -187,27 +162,27 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
         <li class="popular__item popular__item--virtual">
-          <a href="blank.html">Виртуальная реальность</a>
+          <a href="catalog.html">Виртуальная реальность</a>
         </li>
 
         <li class="popular__item popular__item--monopod">
-          <a href="blank.html">Моноподы <br> для селфи</a>
+          <a href="catalog.html">Моноподы <br> для селфи</a>
         </li>
 
         <li class="popular__item popular__item--action">
-          <a href="blank.html">Экшн-камеры</a>
+          <a href="catalog.html">Экшн-камеры</a>
         </li>
 
         <li class="popular__item popular__item--fitness">
-          <a href="blank.html">Фитнес-браслеты</a>
+          <a href="catalog.html">Фитнес-браслеты</a>
         </li>
 
         <li class="popular__item popular__item--clock">
-          <a href="blank.html">Умные часы</a>
+          <a href="catalog.html">Умные часы</a>
         </li>
 
         <li class="popular__item popular__item--kvadrocopter">
-          <a href="blank.html">Квадрокоптеры</a>
+          <a href="catalog.html">Квадрокоптеры</a>
         </li>
       </ul>
     </section> <!-- popular -->
@@ -293,8 +268,8 @@
         <p class="description info__contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
           сможете проверить работоспособность покупки.
           Всякое бывает.</p>
-        <div class="info__contacts-map">
-          <img src="img/map 1.png" alt="">
+        <div class="info__contacts-map" tabindex="0">
+          <img src="img/map.png" alt="карта">
         </div>
         <a href="blank.html" class="button button-contacts">напишите нам</a>
       </div>
@@ -368,17 +343,17 @@
   </footer>
 
   <div class="message-popup-wrapper">
-    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="GET">
+    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="POST">
       <div class="message-popup__inner">
         <label>Ваше имя:
-          <input type="text" name="full-name" placeholder="Имя Фамилия">
+          <input type="text" name="full-name" value="" placeholder="Имя Фамилия" required>
         </label>
         <label>Ваш e-mail:
-          <input type="e-mail" name="e-mail" placeholder="email@example.com">
+          <input type="email" name="email" value="" placeholder="email@example.com" required>
         </label>
         <label>Текст письма:</label>
-        <textarea name="message-text" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
-        <button class="button">Отправить</button>
+        <textarea name="message-text" cols="100" rows="10" value="" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="button">Отправить</button>
       </div>
     </form>
     <button class="close"></button>
@@ -388,10 +363,13 @@
     <div class="map-popup">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.5098452718172!2d29.980857669215887!3d60.043580811611335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696494cfe1fca87%3A0x9b197f27d599b190!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3NzAx!5e0!3m2!1sru!2sru!4v1591450237708!5m2!1sru!2sru"
-        width="960" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </div>
+        width="960" height="550" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button class="map-close"></button>
+    </div>    
   </div>
+
+  <script src="js/message.js"></script>
+  <script src="js/map.js"></script>
 
 </body>
 

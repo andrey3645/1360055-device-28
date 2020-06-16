@@ -17,9 +17,10 @@
         </div> <!-- header__logo  -->
 
         <div class="header__top">
-          <div class="header__search">
+          <form class="header__search" action="https://echo.htmlacademy.ru/" method="GET">            
             <input type="text" name="search" placeholder="Поиск по сайту">
-          </div>
+            <button class="search" type="submit" name="search" tabindex="0">Найти</button>            
+          </form>
           <div class="header__menu">
             <div class="header__menu-item">
               <a href="blank.html">Валенитин Петухов</a>
@@ -41,34 +42,18 @@
             <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
             <div class="sub-menu-wrapper">
               <ul class="sub-menu-list">
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                <li class="sub-menu-column">                  
                     <a href="blank.html">Виртуальная реальность</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Экшн-камеры</a>
-                  </li>
-                </div>
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                </li>
+                <li class="sub-menu-column">
                     <a href="blank.html">Фитнес-браслеты</a>
-                  </li>
-                  <li class="sub-menu-item">
                     <a href="blank.html">Умные часы</a>
-                  </li>
-                </div>
-
-                <div class="sub-menu-items">
-                  <li class="sub-menu-item">
+                </li>
+                <li class="sub-menu-column">
                     <a href="blank.html">Квадрокоптер</a>
-                  </li>
-                </div>
-
+                </li>
               </ul>
             </div>
           </div> <!-- header__submenu -->
@@ -137,7 +122,6 @@
             <fieldset class="filter-item">
               <legend>Стоимость</legend>
               <div class="range-filter">
-
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar" style="width: 60%; margin-left: 0%;"></div>
@@ -145,17 +129,15 @@
                   <div class="toggle toggle-min" tabindex="0" style="left: 0%;"></div>
                   <div class="toggle toggle-max" tabindex="0" style="left: 60%;"></div>
                 </div>
-
                 <div class="price-controls">
-                  <label name="min-price">
+                  <label class="min-price">
                     от <input type="number" step="100" value="0">
                   </label>
-                  <label name="max-price">
+                  <label class="max-price">
                     до <input type="number" step="100" value="5000">
                   </label>
                 </div>
               </div>
-
             </fieldset>
 
             <fieldset class="filter-form__fieldset">
@@ -163,7 +145,7 @@
               <ul class="filter-form__list">
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="black" checked>
                     <span class="check__box"></span>
                     Чёрный
                   </label>
@@ -171,7 +153,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color">
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="wight">
                     <span class="check__box"></span>
                     Белый
                   </label>
@@ -179,7 +161,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="blue" checked>
                     <span class="check__box"></span>
                     Синий
                   </label>
@@ -187,7 +169,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="red" checked>
                     <span class="check__box"></span>
                     Красный
                   </label>
@@ -195,7 +177,7 @@
 
                 <li class="filter-form__item">
                   <label>
-                    <input class="check__input visually-hidden" type="checkbox" name="color">
+                    <input class="check__input visually-hidden" type="checkbox" name="color" value="pink">
                     <span class="check__box"></span>
                     Розовый
                   </label>
@@ -208,14 +190,14 @@
               <ul class="filter-form__list">
                 <li class="filter-form__item">
                   <label>
-                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="1" checked>
+                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="yes" checked>
                     <span class="radio__box"></span>
                     Есть
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label>
-                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="1">
+                    <input class="radio__input visually-hidden" type="radio" name="Bluetooth" value="no">
                     <span class="radio__box"></span>
                     Нет
                   </label>
@@ -226,10 +208,10 @@
 
             <button type="submit" class="button form-button">Показать</button>
           </form>
-
         </aside> <!-- aside -->
 
         <section class="catalog">
+          <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="catalog__sort">
             <ul class="catalog__list">
               <li class="catalog__item">
@@ -305,7 +287,10 @@
               </ul>
               <button type="button">Вперед</button>
             </div>
-        </section> <!-- catalog -->
+
+          </div>
+        </section>
+
       </div>
     </div>
 
@@ -375,32 +360,6 @@
       </section> <!-- footer__right -->
     </div> <!-- page-footer-inner -->
   </footer>
-
-  <div class="message-popup-wrapper">
-    <form class="message-popup-form" action="https://echo.htmlacademy.ru/" method="GET">
-      <div class="message-popup__inner">
-        <label>Ваше имя:
-          <input type="text" name="full-name" placeholder="Имя Фамилия">
-        </label>
-        <label>Ваш e-mail:
-          <input type="e-mail" name="e-mail" placeholder="email@example.com">
-        </label>
-        <label>Текст письма:</label>
-        <textarea name="message-text" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
-        <button class="button">Отправить</button>
-      </div>
-    </form>
-    <button class="close"></button>
-  </div> <!-- message-popup-wrapper -->
-
-  <div class="map-popup-wrapper">
-    <div class="map-popup">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.5098452718172!2d29.980857669215887!3d60.043580811611335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696494cfe1fca87%3A0x9b197f27d599b190!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3NzAx!5e0!3m2!1sru!2sru!4v1591450237708!5m2!1sru!2sru"
-        width="960" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </div>
-  </div>
 
 </body>
 
