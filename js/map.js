@@ -1,13 +1,12 @@
 var mapPopup = document.querySelector('.map-popup-wrapper');
-console.log(mapPopup);
 
 var mapPopupOpen = document.querySelector('.info__contacts-map');
 console.log(mapPopupOpen);
 
 var mapPopupClose = document.querySelector('button.map-close');
-console.log(mapPopupClose);
 
-mapPopupOpen.addEventListener('click', function () {
+mapPopupOpen.addEventListener('click', function (evt) {
+    evt.preventDefault();
     mapPopup.classList.add('popup--active');
 });
 
