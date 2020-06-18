@@ -18,9 +18,9 @@
         </div> <!-- header__logo  -->
 
         <div class="header__top">
-          <form class="header__search" action="https://echo.htmlacademy.ru/" method="GET">            
+          <form class="header__search" action="https://echo.htmlacademy.ru/" method="GET">
             <input type="text" name="search" placeholder="Поиск по сайту">
-            <button class="search" type="submit" name="search" tabindex="0">Найти</button>            
+            <button class="search" type="submit" name="search" tabindex="0">Найти</button>
           </form>
           <div class="header__menu">
             <div class="header__menu-item">
@@ -43,17 +43,17 @@
             <a class="header__submenu-title" href="catalog.html">каталог товаров</a>
             <div class="sub-menu-wrapper">
               <ul class="sub-menu-list">
-                <li class="sub-menu-column">                  
-                    <a href="blank.html">Виртуальная реальность</a>
-                    <a href="blank.html">Моноподы для селфи</a>
-                    <a href="blank.html">Экшн-камеры</a>
+                <li class="sub-menu-column">
+                  <a href="blank.html">Виртуальная реальность</a>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                  <a href="blank.html">Экшн-камеры</a>
                 </li>
                 <li class="sub-menu-column">
-                    <a href="blank.html">Фитнес-браслеты</a>
-                    <a href="blank.html">Умные часы</a>
+                  <a href="blank.html">Фитнес-браслеты</a>
+                  <a href="blank.html">Умные часы</a>
                 </li>
                 <li class="sub-menu-column">
-                    <a href="blank.html">Квадрокоптер</a>
+                  <a href="blank.html">Квадрокоптер</a>
                 </li>
               </ul>
             </div>
@@ -87,7 +87,7 @@
             <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
               метров длиной и весом
               всего 5 килограмм.</p>
-            <a class="button" href="blank.html">подробнее</a>
+            <a class="button slider-button-individual" href="blank.html">подробнее</a>
             <ul class="description__properties-list">
               <li class="description__properties-item">
                 <p class="properties">8,5 м</p>
@@ -99,7 +99,7 @@
               </li>
               <li class="description__properties-item">
                 <p class="properties">Карбон</p>
-                <p class="properties-name">Материал</p>
+                <p class="properties-name individual">Материал</p>
               </li>
             </ul>
           </div>
@@ -162,7 +162,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
         <li class="popular__item popular__item--virtual">
-          <a href="catalog.html">Виртуальная реальность</a>
+          <a href="blank.html">Виртуальная реальность</a>
         </li>
 
         <li class="popular__item popular__item--monopod">
@@ -170,19 +170,19 @@
         </li>
 
         <li class="popular__item popular__item--action">
-          <a href="catalog.html">Экшн-камеры</a>
+          <a href="blank.html">Экшн-камеры</a>
         </li>
 
         <li class="popular__item popular__item--fitness">
-          <a href="catalog.html">Фитнес-браслеты</a>
+          <a href="blank.html">Фитнес-браслеты</a>
         </li>
 
         <li class="popular__item popular__item--clock">
-          <a href="catalog.html">Умные часы</a>
+          <a href="blank.html">Умные часы</a>
         </li>
 
         <li class="popular__item popular__item--kvadrocopter">
-          <a href="catalog.html">Квадрокоптеры</a>
+          <a href="blank.html">Квадрокоптеры</a>
         </li>
       </ul>
     </section> <!-- popular -->
@@ -216,22 +216,23 @@
 
             <div class="services__slider second">
               <div class="services__slider-description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж.</p>
+                <h2 class="title">Гарантия</h2>
+                <p class="description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+                  мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
             </div>
 
             <div class="services__slider third">
               <div class="services__slider-description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж.</p>
+                <h2 class="title">Кредит</h2>
+                <p class="description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                  наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               </div>
             </div>
           </div>
+
         </div> <!-- services__sliders -->
-      </div> <!-- container -->
+      </div>
     </section> <!-- services -->
 
     <section class="logos container">
@@ -268,9 +269,9 @@
         <p class="description info__contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
           сможете проверить работоспособность покупки.
           Всякое бывает.</p>
-        <div class="info__contacts-map" tabindex="0">
+        <a href="https://goo.gl/maps/yJxr5EfhGBthPiDp9" class="info__contacts-map" tabindex="0">
           <img src="img/map.png" alt="карта">
-        </div>
+        </a>
         <a href="blank.html" class="button button-contacts">напишите нам</a>
       </div>
 
@@ -320,7 +321,7 @@
       <section class="page-footer__right">
         <div class="page-footer__user-menu-2">
           <div class="user-menu-2-item visually-hidden">
-            <a href="blank.html">Валентин Петухов</a>
+            <a href="https://htmlacademy.ru/profile/id1360055">Валентин Петухов</a>
           </div>
           <div class="user-menu-2-item">
             <a href="blank.html">Войти</a>
@@ -336,8 +337,8 @@
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p class="phone">Тел.: +7 (495) 495-95-95</p>
         <h3 class="visually-hidden">Разработчик</h3>
-        <a class="copyright" href="blank.html"><img src="img/logo-html.svg" width="27" height="34"
-            alt="Логотип HTML-academy"></a>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27"
+            height="34" alt="Логотип HTML-academy"></a>
       </section> <!-- footer__right -->
     </div> <!-- page-footer-inner -->
   </footer>
@@ -352,7 +353,7 @@
           <input type="email" name="email" value="" placeholder="email@example.com" required>
         </label>
         <label>Текст письма:</label>
-        <textarea name="message-text" cols="100" rows="10" value="" placeholder="В свободной форме"></textarea>
+        <textarea name="message-text" cols="100" rows="10" placeholder="В свободной форме"></textarea>
         <button type="submit" class="button">Отправить</button>
       </div>
     </form>
@@ -364,8 +365,8 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.5098452718172!2d29.980857669215887!3d60.043580811611335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696494cfe1fca87%3A0x9b197f27d599b190!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3NzAx!5e0!3m2!1sru!2sru!4v1591450237708!5m2!1sru!2sru"
         width="960" height="550" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <button class="map-close"></button>
-    </div>    
+      <button class="map-close"></button>
+    </div>
   </div>
 
   <script src="js/message.js"></script>
