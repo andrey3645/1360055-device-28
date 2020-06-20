@@ -35,12 +35,10 @@
   justify-content: center;
   width: 220px;
   height: 40px;
-  background-image: linear-gradient(
-    var(--basic-white) 16px,
-    var(--special-yellow-dark) 16px,
-    var(--special-yellow-dark) 24px,
-    var(--basic-white) 24px
-  );
+  background-image: linear-gradient(var(--basic-white) 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      var(--basic-white) 24px);
   font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -101,13 +99,11 @@
 }
 
 .page-body {
+  min-width: 1200px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
-
-body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -132,16 +128,14 @@ img {
 /* HEADER */
 
 .header {
-  width: 1160px;
-  background-image: linear-gradient(
-    var(--basic-white) 40px,
-    var(--special-yellow) 40px
-  );
+  width: 100%;
+  background-image: linear-gradient(var(--basic-white) 40px,
+      var(--special-yellow) 40px);
   padding-top: 20px;
 }
 
 .header__inner {
-  width: 1160px;
+  width: 100%;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -236,7 +230,7 @@ input[name="search"]:focus {
   border-bottom: 2px solid var(--basic-black);
 }
 
-input[name="search"]:focus + button.search {
+input[name="search"]:focus+button.search {
   visibility: visible;
 }
 
@@ -372,7 +366,7 @@ a.header__submenu-title:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header__submenu > a::after {
+.header__submenu>a::after {
   display: block;
   content: "";
   position: absolute;
@@ -489,18 +483,14 @@ ul.sub-menu-list {
   position: relative;
   padding-left: 89px;
   padding-right: 47px;
-  background-image: linear-gradient(
-    var(--special-yellow) 113px,
-    var(--basic-white) 113px
-  );
+  background-image: linear-gradient(var(--special-yellow) 113px,
+      var(--basic-white) 113px);
   padding-bottom: 83px;
 }
 
 .page-main__slide {
-  background-image: linear-gradient(
-    var(--special-yellow) 113px,
-    var(--basic-white) 113px
-  );
+  background-image: linear-gradient(var(--special-yellow) 113px,
+      var(--basic-white) 113px);
   display: flex;
   display: none;
 }
@@ -775,10 +765,8 @@ p.individual {
 .services {
   width: 100%;
   min-height: 338px;
-  background-image: linear-gradient(
-    var(--basic-white) 165px,
-    var(--basic-grey-light) 165px
-  );
+  background-image: linear-gradient(var(--basic-white) 165px,
+      var(--basic-grey-light) 165px);
   padding-top: 64px;
 }
 
@@ -862,12 +850,10 @@ p.description {
 }
 
 .services__slider-button button {
-  background-image: linear-gradient(
-    var(--basic-grey-light) 16px,
-    var(--special-yellow-dark) 16px,
-    var(--special-yellow-dark) 24px,
-    var(--basic-grey-light) 24px
-  );
+  background-image: linear-gradient(var(--basic-grey-light) 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      var(--basic-grey-light) 24px);
   border: none;
   width: 160px;
   justify-content: center;
@@ -1059,12 +1045,10 @@ p.info__contacts-description {
 
 .button-info {
   width: 260px;
-  background-image: linear-gradient(
-    var(--basic-white) 16px,
-    var(--special-yellow-dark) 16px,
-    var(--special-yellow-dark) 24px,
-    var(--basic-white) 24px
-  );
+  background-image: linear-gradient(var(--basic-white) 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      var(--basic-white) 24px);
   padding-left: 8px;
 }
 
@@ -1398,11 +1382,9 @@ a.copyright:active {
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
-  background-image: linear-gradient(
-    to right,
-    #dcdcdc 50%,
-    var(--basic-grey-light) 50%
-  );
+  background-image: linear-gradient(to right,
+      #dcdcdc 50%,
+      var(--basic-grey-light) 50%);
   z-index: -1;
 }
 
@@ -1548,11 +1530,9 @@ button.btn-arrow-up:active svg {
 
 .filter-container-2 {
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    var(--basic-grey-light) 50%,
-    transparent 50%
-  );
+  background-image: linear-gradient(to right,
+      var(--basic-grey-light) 50%,
+      transparent 50%);
   z-index: -1;
 }
 
@@ -1731,28 +1711,28 @@ button.btn-arrow-up:active svg {
   border-radius: 3px;
 }
 
-.check__input:checked + .check__box {
+.check__input:checked+.check__box {
   background-image: url("../img/filter/checkbox-checked.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
 }
 
-.check__input:hover + .check__box {
+.check__input:hover+.check__box {
   opacity: 0.6;
 }
 
-.check__input:active + .check__box {
+.check__input:active+.check__box {
   opacity: 1;
 }
 
-.check__input:disabled + .check__box,
-.check__input:checked:disabled + .check__box {
+.check__input:disabled+.check__box,
+.check__input:checked:disabled+.check__box {
   opacity: 0.3;
 }
 
-.check__input:focus + .check__box,
-.radio__input:focus + .radio__box {
+.check__input:focus+.check__box,
+.radio__input:focus+.radio__box {
   opacity: 0.6;
 }
 
@@ -1766,34 +1746,32 @@ button.btn-arrow-up:active svg {
   border-radius: 50%;
 }
 
-.radio__input:checked + .radio__box {
+.radio__input:checked+.radio__box {
   background-image: url("../img/filter/radio-checked.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
 }
 
-.radio__input:hover + .radio__box {
+.radio__input:hover+.radio__box {
   opacity: 0.6;
 }
 
-.radio__input:active + .radio__box {
+.radio__input:active+.radio__box {
   opacity: 1;
 }
 
-.radio__input:disabled + .radio__box,
-.radio__input:checked:disabled + .radio__box {
+.radio__input:disabled+.radio__box,
+.radio__input:checked:disabled+.radio__box {
   opacity: 0.3;
 }
 
 .form-button {
   border: none;
-  background-image: linear-gradient(
-    var(--basic-grey-light) 16px,
-    var(--special-yellow-dark) 16px,
-    var(--special-yellow-dark) 24px,
-    var(--basic-grey-light) 24px
-  );
+  background-image: linear-gradient(var(--basic-grey-light) 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      var(--basic-grey-light) 24px);
   margin-top: 29px;
   width: 200px;
   padding-left: 2px;
@@ -1992,12 +1970,10 @@ button.btn-arrow-up:active svg {
 }
 
 .catalog__item-actions button.button {
-  background-image: linear-gradient(
-    transparent 16px,
-    var(--special-yellow-dark) 16px,
-    var(--special-yellow-dark) 24px,
-    transparent 24px
-  );
+  background-image: linear-gradient(transparent 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      transparent 24px);
 }
 
 .catalog__item-actions button.btn-text {
@@ -2221,6 +2197,7 @@ button.map-close:active {
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
