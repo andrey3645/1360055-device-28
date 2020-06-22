@@ -1,7 +1,6 @@
 var mapPopup = document.querySelector('.map-popup-wrapper');
 
 var mapPopupOpen = document.querySelector('.info__contacts-map');
-console.log(mapPopupOpen);
 
 var mapPopupClose = document.querySelector('button.map-close');
 

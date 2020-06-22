@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body class="page-body">
-
   <div class="container">
     <header class="header">
       <div class="header__inner">
@@ -79,7 +78,7 @@
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
       <div class="page-main__sliders">
 
-        <div class="page-main__slide current-slide">
+        <div class="page-main__slide current-slide" id="first-slide">
           <div class="page-main__slide-picture">
             <img src="img/slider/slider-1.png" width="384" height="486" alt="первый слайд">
           </div>
@@ -105,7 +104,7 @@
           </div>
         </div> <!-- page-main__slide -->
 
-        <div class="page-main__slide">
+        <div class="page-main__slide" id="second-slide">
           <div class="page-main__slide-picture">
             <img src="img/slider/slider-2.png" width="345" height="485" alt="второй слайд">
           </div>
@@ -123,7 +122,7 @@
           </div>
         </div> <!-- page-main__slide -->
 
-        <div class="page-main__slide">
+        <div class="page-main__slide" id="third-slide">
           <div class="page-main__slide-picture">
             <img src="img/slider/slider-3.png" width="526" height="334" alt="третий слайд">
           </div>
@@ -150,37 +149,32 @@
         </div> <!-- page-main__slide -->
 
         <div class="slider-controls">
-          <button class="slider-button checked">первая кнопка</button>
-          <button class="slider-button">вторая кнопка</button>
-          <button class="slider-button">третья кнопка</button>
+          <button type="button" class="slider-button checked" id="slider-btn-1">первая кнопка</button>
+          <button type="button" class="slider-button" id="slider-btn-2">вторая кнопка</button>
+          <button type="button" class="slider-button" id="slider-btn-3">третья кнопка</button>
         </div>
 
       </div>
     </div> <!-- container -->
 
-    <section class="popular container">
+    <section class="popular container-no-grid">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
         <li class="popular__item popular__item--virtual">
           <a href="blank.html">Виртуальная реальность</a>
         </li>
-
         <li class="popular__item popular__item--monopod">
           <a href="catalog.html">Моноподы <br> для селфи</a>
         </li>
-
         <li class="popular__item popular__item--action">
           <a href="blank.html">Экшн-камеры</a>
         </li>
-
         <li class="popular__item popular__item--fitness">
           <a href="blank.html">Фитнес-браслеты</a>
         </li>
-
         <li class="popular__item popular__item--clock">
           <a href="blank.html">Умные часы</a>
         </li>
-
         <li class="popular__item popular__item--kvadrocopter">
           <a href="blank.html">Квадрокоптеры</a>
         </li>
@@ -190,21 +184,20 @@
     <section class="services">
       <div class="container">
         <div class="services__sliders">
-
           <ul class="services__slider-buttons-list">
-            <li class="services__slider-button ">
-              <button type="button" class="button services__slider-button--active">доставка</button>
+            <li class="services__slider-button">
+              <button type="button" id="services-btn-1"
+                class="button btn-individual services__slider-button--active">доставка</button>
             </li>
             <li class="services__slider-button">
-              <button type="button" class="button">гарантия</button>
+              <button type="button" id="services-btn-2" class="button">гарантия</button>
             </li>
             <li class="services__slider-button">
-              <button type="button" class="button">кредит</button>
+              <button type="button" id="services-btn-3" class="button">кредит</button>
             </li>
           </ul>
 
           <div class="services__sliders-list">
-
             <div class="services__slider first active">
               <div class="services__slider-description">
                 <h2 class="title">Доставка</h2>
@@ -212,7 +205,6 @@
                   бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
             </div>
-
             <div class="services__slider second">
               <div class="services__slider-description">
                 <h2 class="title">Гарантия</h2>
@@ -220,7 +212,6 @@
                   мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
             </div>
-
             <div class="services__slider third">
               <div class="services__slider-description">
                 <h2 class="title">Кредит</h2>
@@ -230,27 +221,20 @@
             </div>
           </div>
         </div>
-
       </div> <!-- container -->
-
     </section> <!-- services -->
 
     <section class="logos container">
       <h2 class="visually-hidden">Логотипы наших друзей</h2>
       <ul class="logos__list">
-        <li class="logos__item"><a href="blank.html" width="260" height="100"><img src="img/logos/logo-1.png"
-              alt="логотип компании партнера"></a></li>
-        <li class="logos__item"><a href="blank.html" width="260" height="100"><img src="img/logos/logo-2.png"
-              alt="логотип компании партнера"></a></li>
-        <li class="logos__item"><a href="blank.html" width="260" height="100"><img src="img/logos/logo-3.png"
-              alt="логотип компании партнера"></a></li>
-        <li class="logos__item"><a href="blank.html" width="260" height="100"><img src="img/logos/logo-4.png"
-              alt="логотип компании партнера"></a></li>
+        <li class="logos__item"><a href="blank.html"><img src="img/logos/logo-1.png" width="260" height="100" alt="логотип компании партнера"></a></li>
+        <li class="logos__item"><a href="blank.html"><img src="img/logos/logo-2.png" width="260" height="100" alt="логотип компании партнера"></a></li>
+        <li class="logos__item"><a href="blank.html"><img src="img/logos/logo-3.png" width="260" height="100" alt="логотип компании партнера"></a></li>
+        <li class="logos__item"><a href="blank.html"><img src="img/logos/logo-4.png" width="260" height="100" alt="логотип компании партнера"></a></li>
       </ul>
     </section> <!-- logos -->
 
     <section class="info container">
-
       <div class="info__about">
         <h2 class="info__about-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
@@ -263,7 +247,6 @@
         </ul>
         <a href="blank.html" class="button button-info">подробнее о нас</a>
       </div>
-
       <div class="info__contacts">
         <h2 class="info__about-title">Контакты</h2>
         <p class="description info__contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
@@ -273,7 +256,6 @@
         </a>
         <a href="blank.html" class="button button-contacts">напишите нам</a>
       </div>
-
     </section> <!-- info -->
   </main>
 
@@ -293,7 +275,6 @@
         </ul>
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="page-footer__social">
-
           <li><a href="blank.html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -371,8 +352,7 @@
     </div>
   </div>
 
-  <script src="js/message.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/min.js"></script>
 
 </body>
 

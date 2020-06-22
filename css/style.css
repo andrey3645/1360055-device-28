@@ -119,6 +119,14 @@ img {
 }
 
 .container {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-no-grid {
   width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
@@ -149,6 +157,12 @@ img {
 .header__logo a:hover,
 .header__logo a:focus {
   opacity: 0.6;
+}
+
+.header__logo a:not([href]):hover,
+.header__logo a:not([href]):focus {
+  opacity: 1;
+  cursor: default;
 }
 
 .header__logo img:active {
@@ -431,6 +445,7 @@ ul.sub-menu-list {
 .header__navigation {
   width: 50%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
@@ -442,6 +457,8 @@ ul.sub-menu-list {
 }
 
 .header__navigation-user-menu {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -450,20 +467,22 @@ ul.sub-menu-list {
   justify-content: flex-start;
 }
 
+.header__navigation-user-menu li {
+  padding-left: 20px;
+}
+
 .header__navigation-user-menu li:nth-of-type(1) {
-  flex-basis: 25%;
+
   padding-left: 20px;
 }
 
 .header__navigation-user-menu li:nth-of-type(2) {
-  flex-basis: 25%;
   padding-left: 35px;
 }
 
 .header__navigation-user-menu li:nth-of-type(3) {
-  flex-basis: 50%;
-  text-align: right;
   margin-right: -4px;
+  padding-left: 107px;
 }
 
 .header__navigation-user-menu a:hover,
@@ -504,6 +523,8 @@ ul.sub-menu-list {
 }
 
 .page-main__slide-picture img {
+  object-fit: contain;
+  max-height: 485px;
   display: block;
   width: 384px;
   margin-top: -15px;
@@ -628,6 +649,11 @@ p.individual {
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
+}
+
+.slider-button:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
 
 .slider-button-individual {
@@ -860,6 +886,13 @@ p.description {
   margin-bottom: 21px;
 }
 
+button.btn-individual {
+  background-image: linear-gradient(var(--basic-white) 16px,
+      var(--special-yellow-dark) 16px,
+      var(--special-yellow-dark) 24px,
+      var(--basic-grey-light) 24px);
+}
+
 .services__slider-button button:hover {
   width: 160px;
   height: 40px;
@@ -882,7 +915,8 @@ p.description {
 /* модификаторы */
 
 button.services__slider-button--active,
-button.services__slider-button--active:hover {
+button.services__slider-button--active:hover,
+button.services__slider-button--active:focus {
   width: 280px;
   height: 40px;
   background-image: none;
@@ -891,6 +925,7 @@ button.services__slider-button--active:hover {
   justify-content: left;
   padding-left: 20px;
   cursor: pointer;
+  transition: none;
 }
 
 /* LOGOS */
@@ -1118,6 +1153,12 @@ p.info__contacts-description {
   opacity: 1;
 }
 
+.page-footer__left a:not([href]):hover,
+.page-footer__left a:not([href]):focus {
+  opacity: 1;
+  cursor: default;
+}
+
 .page-footer__left a:hover,
 .page-footer__left a:focus {
   opacity: 0.6;
@@ -1137,6 +1178,7 @@ p.info__contacts-description {
 
 .page-footer__user-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   list-style: none;
@@ -1281,8 +1323,9 @@ p.info__contacts-description {
   left: -19px;
 }
 
-p.phone {
-  margin: 0;
+a.phone {
+  display: block;
+  color: var(--basic-white);
   padding-bottom: 67px;
   letter-spacing: -0.01em;
 }
@@ -1322,7 +1365,7 @@ a.copyright:active {
   margin: 0;
   display: flex;
   list-style: none;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
   padding-top: 20px;
 }
 
@@ -1440,7 +1483,7 @@ a.copyright:active {
   flex-grow: 1;
 }
 
-.catalog__sort-item {
+.catalog__sort-item a {
   display: flex;
   align-items: center;
   padding-right: 18px;
@@ -1449,6 +1492,8 @@ a.copyright:active {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 13px;
 }
 
 .catalog__sort-arrows {
@@ -1458,9 +1503,9 @@ a.copyright:active {
   align-items: center;
   padding-right: 12px;
   padding-left: 1px;
+  padding-top: 3px;
 }
 
-.catalog__sort-list button,
 .catalog__sort-arrows button {
   border: none;
   background: transparent;
@@ -1468,11 +1513,9 @@ a.copyright:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog__sort-list button:hover,
-.catalog__sort-list button:focus {
+.catalog__sort-list a:hover,
+.catalog__sort-list a:focus {
   color: rgba(0, 0, 0, 0.6);
-  border: none;
-  outline: none;
 }
 
 .catalog__sort-arrows button {
@@ -1521,9 +1564,10 @@ button.btn-arrow-up:active svg {
 
 /* модиыикация */
 
-.catalog__sort-item--active button,
-.catalog__sort-item:active button {
+.catalog__sort-item--active a,
+.catalog__sort-item:active a {
   color: var(--basic-black);
+  padding-left: 5px;
 }
 
 /* FILTER */
@@ -1604,17 +1648,15 @@ button.btn-arrow-up:active svg {
 }
 
 .toggle {
-  box-sizing: content-box;
-  display: block;
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: #c4c4c4;
-  border: 8px solid var(--basic-white);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
-  border-radius: 50%;
   top: 30px;
   cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
 }
 
 .toggle-min {
@@ -1623,6 +1665,18 @@ button.btn-arrow-up:active svg {
 
 .toggle-max {
   left: 120px;
+}
+
+.toggle-min::before,
+.toggle-max::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
 }
 
 .price-controls {
