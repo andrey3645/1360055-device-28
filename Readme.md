@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Денис Вяткин](https://up.htmlacademy.ru/htmlcss/28/user/1360055).
-* Наставник: [Андрей Чепулис](https://htmlacademy.ru/profile/id240237).
+* Наставник: [Андрей Чевапчичи](https://htmlacademy.ru/profile/id240237).
 
 ---
 
